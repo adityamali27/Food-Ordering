@@ -1,0 +1,506 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+nav {
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(211, 211, 211);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+
+}
+
+.logo,
+.menu {
+    width: 700px;
+    height: 75px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo {
+    position: relative;
+    right: 250px;
+}
+
+.menu ol {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    font-size: larger;
+}
+
+.menu a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(232, 101, 101);
+}
+
+/* body starts  */
+
+.first {
+
+    height: 90vh;
+    display: flex;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.head {
+    width: 700px;
+    height: 500px;
+    color: white;
+
+}
+
+.image {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    animation: move 5s linear infinite;
+}
+
+@keyframes move {
+    0%{
+        bottom: 50px;
+    }
+
+    50%{
+        bottom: 0px;
+    }
+    100%{
+        bottom: 50px;
+    }
+}
+
+.order {
+    text-align: center;
+
+}
+
+.order button {
+    width: 140px;
+    height: 35px;
+    border-radius: 10px;
+    border: 2px solid rgb(204, 123, 123);
+    background-color: transparent;
+    color: rgb(204, 123, 123);
+    position: relative;
+    top: 110px;
+
+}
+
+.order button:hover {
+    background-color: rgb(204, 123, 123);
+    color: white;
+}
+
+.order h1 {
+    font-size: 90px;
+    position: relative;
+    top: 50px;
+}
+
+.order h1::after {
+    content: "Love";
+    color: red;
+}
+
+.order h5 {
+    font-size: 25px;
+    position: relative;
+    top: 70px;
+}
+
+.social {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 268px;
+    height: 100px;
+    position: relative;
+    top: 130px;
+    left: 210px;
+}
+
+.social img {
+    height: 50px;
+    width: 50px;
+    filter: brightness(0) invert(1);
+}
+
+
+/* work flow  */
+
+.work {
+    height: 100vh;
+    background-color: rgba(211, 211, 211, 0.662);
+}
+
+.worktext,
+.workflow {
+    height: 40%;
+    width: 80%;
+    /* margin-top: 30px; */
+    margin-left: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.worktext {
+    text-align: center;
+    font-size: 35px;
+    height: 20%;
+
+
+}
+
+.im {
+
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px black;
+    
+}
+
+.step {
+
+    height: 20%;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 150px;
+    margin-top: -25px;
+}
+
+.step1{
+    width: 250px;
+    height: 100px;
+    text-align: center;
+    font-size: large;
+}
+
+#im1 {
+    background: url(./images/step-1.jpg) no-repeat scroll;
+    background-size: cover;
+    border: 10px solid white;
+}
+
+#im2 {
+    background: url(./images/step-2.jpg) no-repeat scroll;
+    background-size: cover;
+    border: 10px solid white;
+
+}
+
+#im3 {
+    background: url(./images/step-3.jpg) no-repeat scroll;
+    background-size: cover;
+    border: 10px solid white;
+
+}
+
+#im4 {
+    background: url(./images/step-4.jpg) no-repeat scroll;
+    background-size: cover;
+    border: 10px solid white;
+
+}
+
+
+/* menu  */
+
+
+.foodmenu {
+    height: 100%;
+    background-color: rgba(211, 211, 211, 0.662);
+    margin-top: -70px;
+    /* padding-top: 20px ; */
+
+}
+
+.menu1 {
+    height: 60%;
+    width: 85%;
+    position: relative;
+    left: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.food {
+    width: 80%;
+    height: 100px;
+    position: relative;
+    left: 150px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 15px;
+    margin-bottom: 50px;
+
+}
+
+.item {
+    width: 300px;
+    height: 350px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: white;
+}
+
+.item:hover{
+    box-shadow: 0px 0px 10px rgba(0 , 0 , 0 ,0.6);
+}
+
+.add {
+    height: 200px;
+    width: 250px;
+    position: relative;
+    left: 24px;
+    top: 24px;
+    border-radius: 15px;
+}
+
+#add1 {
+    background: url('./images/12.jpg') no-repeat scroll;
+    background-size: cover;
+}
+
+#add2 {
+    background: url('./images/13.jpg') no-repeat scroll;
+    background-size: cover;
+}
+
+#add3 {
+    background: url('./images/14.jpeg') no-repeat scroll;
+    background-size: cover;
+}
+
+#add5 {
+    background: url('./images/15.jpg') no-repeat scroll;
+    background-size: cover;
+}
+
+#add6 {
+    background: url('./images/16.jpeg') no-repeat scroll;
+    background-size: cover;
+}
+
+#add7 {
+    background: url('./images/17.jpeg') no-repeat scroll;
+    background-size: cover;
+}
+
+
+.home button {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: red;
+    border: 2px solid red;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#item1 h3,
+#item2 h3,
+#item3 h3,
+#item5 h3,
+#item6 h3,
+#item7 h3 {
+    position: relative;
+    top: 33px;
+    text-align: center;
+}
+
+#item1 h2,
+#item2 h2,
+#item3 h2,
+#item5 h2,
+#item6 h2,
+#item7 h2 {
+    position: relative;
+    color: red;
+    top: 35px;
+    text-align: center;
+}
+
+#item1 button , #item2 button , #item3 button , #item5 button , #item6 button , #item7 button {
+    height: 35px;
+    width: 123px;
+    background-color: rgb(236, 131, 131);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    position: relative;
+    top: 42px;
+    left: 85px;
+    font-weight: bold;
+}
+
+
+
+/* Footer  */
+
+
+footer{
+    height: 70vh;
+    /* border: 2px solid red; */
+    background-color: black;
+    color: white;
+}
+.foot  {
+    height: 80%;
+    /* border: 2px solid green; */
+}
+
+.fotnav {
+    height: 20%;
+    /* border: 2px solid green; */
+}
+
+.fotnav , .foot{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.feedback , .con{
+    width: 48%;
+    height: 90%;
+    border: 2px solid rgba(255, 255, 255, 0.278);
+    border-radius: 10px;
+}
+
+.fotnav li a{
+    border: 2px solid rgba(255, 255, 255, 0.275);
+    padding: 10px 20px 10px;
+    color: white;
+    border-radius:  10px; ;
+}
+
+.fotnav a:hover{
+    background-color: rgb(236, 131, 131);
+}
+
+
+.fom1 , .icon{
+    height: 80%;
+    width: 100%;
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.icon{
+    height: 20%;
+    width: 50%;
+    border-top: 2px solid rgba(255, 255, 255, 0.275);
+    position: relative;
+    left: 200px;
+}
+
+.fom1 .mob1 , .fom1  .add1{
+    /* border: 2px solid aqua; */
+    height: 90%;
+    width: 80%;
+} 
+
+.fom1 img {
+    height: 60px;
+    width: 60px;
+    filter: brightness(0) invert(1);
+    position: relative;
+    left: 150px;
+    top: 30px;
+}
+
+.icon img{
+    height: 40px;
+    width: 40px;
+    filter: brightness(0) invert(1);
+    position: relative;
+    /* left: 150px; */
+    /* top: 30px; */
+}
+
+.fom1 h2 , .fom1 h5{
+    position: relative;
+    top: 30px;
+    left: 20px;
+}
+
+.feedback input
+{
+    width: 240px;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border:2px solid rgba(255, 255, 255, 0.271);
+    background-color: transparent;
+    color: white;
+
+    
+}
+
+.feedback label{
+    font-weight: bolder;
+    padding: 10px;
+    margin: 10px;
+ 
+}
+
+.feedback textarea{
+    width: 680px;
+    margin:20px ;
+    margin-top: 10px;
+    border-radius: 10px;
+    border:2px solid rgba(255, 255, 255, 0.271);
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.feedback button{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.275);
+    position: relative;
+    left: 300px;
+    font-weight: bold;
+    color: white;
+    background-color: transparent;
+}
+
+.feedback button:hover{
+    background-color: rgb(233, 155, 155);
+}

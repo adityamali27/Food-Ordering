@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <style>
+        
+        .Singing{
+            height: 100vh;
+            background-color: rgba(1, 1, 1, 0.956);
+            /* background: url('./images/bg2.png') no-repeat scroll ; */
+            background-size: cover;
+            /* border: 5px solid black; */
+            justify-content: space-evenly;
+            align-items: center;
+            display: flex;
+        }
+        .login{
+            height: 500px;
+            width: 400px;
+            background-color: rgba(255, 255, 255, 0.222);
+            /* border: 4px solid red; */
+            border-radius: 10px;
+            padding-top: 50px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: center;
+            box-shadow: 0px 0px 10px rgba(115, 114, 114, 0.382);
+            
+        }
+        input{
+            border: 2px solid rgb(198, 193, 193);
+            border-radius: 5px;
+           background-color: aliceblue;
+           font-weight: bold;
+           padding-left: 10px;
+            width: 300px;
+            height: 50px;
+            margin: 10px;
+        }
+        button{
+            border: 2px solid rgb(198, 193, 193);
+            border-radius: 5px;
+            width: 300px;
+            height: 40px;
+            background-color: transparent;
+            color: white;
+        }
+
+        button:hover{
+            background-color: rgb(216, 143, 143);
+        }
+
+        #account{
+            border: 2px solid rgb(198, 193, 193);
+            border-radius: 5px;
+            width: 200px;
+            height: 40px;
+            background-color: transparent
+            color : white
+
+        }
+        #account a{
+            text-decoration: none;
+            color: white;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="Singing">
+        
+        <div class="login">
+            <h1 style="text-align: center; color: white;">Log In</h1>
+           <form action="./index.html">
+            <input type="text" placeholder="Email address or Phone number"><br><br>
+            <input type="password" placeholder="password"><br><br>
+            <button><b>Log In</b></button> <br><br>
+            <a href="#" style="color: white;">Forgotten password?</a> <br> <br>
+            <hr>
+            <br><br>
+
+            <button id="account"><b><a href="./signup.html">Create new accoutn</a></b></button>
+           </form>
+
+        </div>
+        <div class="photo">
+            <img src="./images/burger.png" alt="" height="500px" width="500px">
+        </div>
+    </div>
+
+</body>
+</html>
